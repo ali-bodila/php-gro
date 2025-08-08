@@ -1,0 +1,30 @@
+{
+    "name": "gro/domain",
+    "description": "Domain layer components for GRO DDD library suite",
+    "type": "library",
+    "keywords": ["ddd", "domain-driven-design", "domain", "php", "entities", "value-objects"],
+    "homepage": "https://github.com/ali/php-gro",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali",
+            "email": "bodila.ali@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "gro/core": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gro\\Domain\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gro\\Domain\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

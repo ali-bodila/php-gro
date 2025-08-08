@@ -1,0 +1,36 @@
+{
+    "name": "gro/infrastructure",
+    "description": "Infrastructure layer components for GRO DDD library suite",
+    "type": "library",
+    "keywords": ["ddd", "domain-driven-design", "infrastructure", "php", "repository", "persistence"],
+    "homepage": "https://github.com/ali/php-gro",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali",
+            "email": "bodila.ali@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "gro/core": "^1.0",
+        "gro/domain": "^1.0"
+    },
+    "suggest": {
+        "doctrine/orm": "For Doctrine ORM repository implementations",
+        "elasticsearch/elasticsearch": "For Elasticsearch repository implementations",
+        "predis/predis": "For Redis cache implementations"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gro\\Infrastructure\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gro\\Infrastructure\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
